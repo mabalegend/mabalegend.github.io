@@ -64,6 +64,7 @@ function loadDoc() {
   xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhttp.open("POST", "https://www.googleapis.com/blogger/v3/blogs/4465545623872553337/posts", true);
   xhttp.send(JSON.stringify(requestData));
+  alert(JSON.stringify(requestData));
 }
 </script>
 
