@@ -24,7 +24,9 @@
 <h1>The XMLHttpRequest Object</h1>
 <button type="button" onclick="loadDoc()">Change Content</button>
 </div>
-
+<div>
+  <button type="button" onclick="loadDocz()">Change Content POST</button>
+    </div>
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -35,6 +37,18 @@ function loadDoc() {
     }
   };
   xhttp.open("GET", "https://www.googleapis.com/blogger/v3/blogs/4465545623872553337/posts?key=AIzaSyAOqvvQ04OktdsgvWx1pmUKx_QDiYfSCG8", true);
+  xhttp.send();
+}
+  
+  function loadDocz() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("POST", "https://www.googleapis.com/blogger/v3/blogs/4465545623872553337/posts", true);
   xhttp.send();
 }
 </script>
