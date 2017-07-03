@@ -1,47 +1,15 @@
 <html>
   <head>
     <script type='text/javascript'>
-      window.addEventListener("load", function () {
-  function sendData() {
-    var XHR = new XMLHttpRequest();
-
-    // Bind the FormData object and the form element
-    var FD = new FormData(form);
-
-    // Define what happens on successful data submission
-    XHR.addEventListener("load", function(event) {
-      alert(event.target.responseText);
-    });
-
-    // Define what happens in case of error
-    XHR.addEventListener("error", function(event) {
-      alert('Oups! Something goes wrong.');
-    });
-
-    // Set up our request
-    XHR.open("POST", "https://example.com/cors.php");
-
-    // The data sent is what the user provided in the form
-    XHR.send(FD);
-  }
- 
-  // Access the form element...
-  var form = document.getElementById("myForm");
-
-  // ...and take over its submit event.
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    sendData();
-  });
-});
     </script>
   </head>
   <body>
-    <form id="myForm">
-      <label for="myName">Send me your name:</label>
-      <input id="myName" name="name" value="John">
-      <input type="submit" value="Send Me!">
-    </form>
+<form action="/action_page.php" method="get" target="_blank">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click on the submit button, and the input will be sent to a page on the server called "/action_page.php".</p>
   </body>
 </html>
