@@ -1,0 +1,12 @@
+---
+layout: default
+title: Demo
+---
+	  {% for demo in site.demo reversed %}
+
+	    <div class='blog-post'><p class="blog-post-meta">{{ demo.date | date: "%m/%d/%Y" }}</p> <h2 class="blog-post-title"><a href="{{ demo.url }}" title="{{ demo.title }}">{{ demo.title }}</a></h2>
+<div style="clear:both;"></div>
+</div>
+
+	  {% endfor %}
+	

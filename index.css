@@ -1,0 +1,138 @@
+.allhold{
+	height: 100%;
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+	    position: relative;
+}
+.sechold{
+	     display: table-cell; 
+     vertical-align: middle; 
+	padding-bottom: 100px;
+}
+.blog-masthead,.blog-header{
+	    display: table;
+    margin: 0 auto;
+}
+.headcon {
+	display:block;
+}
+.row{
+padding:0 15px;
+}
+.blog-post {
+margin: 20px 15px;
+    font-size: 140%;
+	    position: relative;
+		    
+}
+.blog-main{
+	display: table;
+}
+.blog-post-meta{
+	    position: absolute;
+}
+.blog-post-title, .blog-post-meta {
+	    float: left;
+}
+.blog-post-title a,.blog-post-title a:visited{
+	    color: #cacaca;
+		display:block;
+}
+.blog-post-title a:hover{
+	color:#26decd;
+}
+.blog-post-title {
+    font-size: 100%;
+    padding-left: 10px;
+	margin: 0;
+	    margin-left: 120px;
+}
+.rowi{
+
+}
+.blog-post-page-title{
+	    margin-bottom: 20px;
+    color: #cacaca;
+    font-size: 250%;
+    line-height: 100%;
+}
+.blog-post a:hover{
+	color:#26decd;
+	text-decoration:underline;
+	
+}
+.row {
+color: #999999;
+    font-size: 105%;
+    line-height: 160%;
+
+}
+.post{
+max-width: 968px;
+       margin: 60px auto;
+}
+.post-body {
+margin-bottom: 60px;	
+}
+.post-body h3,.post-body h4,.post-body h5,.post-body h6{
+	color: #cacaca;
+
+    margin-top: 20px;
+}
+.post-body h3{
+	    font-size: 160%;
+    line-height: 150%;
+}
+.post-body b, .post-body em,.post-body strong {
+font-weight: bold;
+      }
+.post-body blockquote {
+background: #EAEAEA;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    display: table;
+    font-family: serif;
+    font-style: italic;
+    margin: 10px;
+      }
+.post-body i {
+font-style: italic;
+      }
+	  .post-body code{
+		      background: #22bfb1;
+    display: inline-block;
+    padding: 5px 7px;
+    font-size: 90%;
+    line-height: 100%;
+    color: #4e4e4e;
+	  }
+.post-body ol {
+	padding-left: 2em;
+	list-style-type: decimal; 
+}
+.post-body ul {
+	padding-left: 2em;
+	list-style-type: disc;
+}
+.meta {
+	color: #a2a2a2;
+    font-size: 90%;
+}
+@media screen and (max-width: 550px) {
+	.blog-title {
+	font-size:200%;	
+	}
+	.blog-description {
+    font-size: 100%;
+}
+	.blog-header{
+	padding:20px;	
+	}
+	.blog-post-page-title{
+		font-size: 150%;
+	}
+	.post{
+	margin-top:25px;	
+	}
+}

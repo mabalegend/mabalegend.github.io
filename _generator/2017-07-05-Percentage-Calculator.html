@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Percentage Calculator"
+date: 2017-07-05
+---
+
+<div>
+<input type="text" name="wid" id="wid"> % of <input type="text" id="hei" name="hei" onkeypress="return KeyPress(event,'sho');">
+ <button onClick="sho()" id='sho'>
+  Calculate
+</button>
+<div id='result'>
+</div>
+</div>
+<br/>
+<div>
+<input type="text" name="wid1" id="wid1"> is what percent of <input type="text" id="hei1" name="hei1" onkeypress="return KeyPress(event,'sho1');">
+ <button onClick="sho1()" id='sho1'>
+  Calculate
+</button>
+<div id='result1'>
+</div>
+</div>
+
+<script type='text/javascript'>
+function sho(){
+var wid = ((document.getElementById('wid').value).replace(/[^\d.-]/g, ''));
+var hei = ((document.getElementById('hei').value).replace(/[^\d.-]/g, ''));
+ if(wid==''||hei==''){
+  var has = "please input numbers!";
+ }else {
+var has = (wid/100)*hei;
+ }
+ document.getElementById("result").innerHTML = has;
+}
+ 
+function sho1(){
+var wid1 = ((document.getElementById('wid1').value).replace(/[^\d.-]/g, ''));
+var hei1 = ((document.getElementById('hei1').value).replace(/[^\d.-]/g, ''));
+ if(wid1==''||hei1==''){
+  var has = "please input numbers!";
+ }else {
+var has = (wid1/hei1)*100;
+ }
+ document.getElementById("result1").innerHTML = has+"%";
+}
+
+function KeyPress(e,f)
+{
+    // look for window.event in case event isn't passed in
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById(f).click();
+        return false;
+    }
+    return true;
+}
+</script>

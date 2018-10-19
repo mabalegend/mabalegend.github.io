@@ -1,0 +1,14 @@
+name: Damzaky, A person
+markdown: kramdown
+collections:
+  demo:
+    output: true
+    permalink: /:collection/:title
+  generator:
+    output: true
+    permalink: /:collection/:title
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title
+plugins:
+  - jekyll-github-metadata

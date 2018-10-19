@@ -1,0 +1,101 @@
+---
+layout: post
+title: "Pure css accordion menu"
+date: 2017-11-15
+tipe: demo
+---
+<div class="akurdaun">
+<ul>
+<li> <a href="http://damzaky.blogspot.com/search?updated-min=2013-01-01T00:00:00-08:00&amp;amp;updated-max=2014-01-01T00:00:00-08:00&amp;amp;max-results=10">2013</a> 
+<ul>
+<li> <a href="http://damzaky.blogspot.com/2013_01_01_archive.html">January</a> </li>
+<li> <a href="http://damzaky.blogspot.com/2013_03_01_archive.html">March</a> </li>
+<li> <a href="http://damzaky.blogspot.com/2013_04_01_archive.html">April</a> </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li> <a href="http://damzaky.blogspot.com/search?updated-min=2012-01-01T00:00:00-08:00&amp;amp;updated-max=2013-01-01T00:00:00-08:00&amp;amp;max-results=40">2012</a> 
+<ul>
+<li> <a href="http://damzaky.blogspot.com/2012_08_01_archive.html">August</a> </li>
+<li> <a href="http://damzaky.blogspot.com/2012_09_01_archive.html">September</a> </li>
+<li> <a href="http://damzaky.blogspot.com/2012_10_01_archive.html">October</a> </li>
+<li> <a href="http://damzaky.blogspot.com/2012_11_01_archive.html">November</a> </li>
+<li> <a href="http://damzaky.blogspot.com/2012_12_01_archive.html">December</a> </li>
+</ul>
+</li>
+</ul>
+</div>
+<br />
+<style type="text/css">
+.akurdaun {
+font-size:13px;
+line-height:30px;
+font-weight:700;
+text-transform:uppercase;
+border:1px solid #1d1d1d;
+border-radius:3px;
+margin: 0 auto;
+max-width: 300px;
+}
+
+.akurdaun > ul {
+margin:0;
+padding:0;
+}
+
+.akurdaun ul, .akurdaun li {
+list-style:none;
+}
+
+.akurdaun > ul > li {
+background:#292929;
+margin:0;
+padding:0;
+}
+
+.akurdaun > ul > li ul {
+transition:.3s ease-out;
+-webkit-transition:.3s ease-out;
+-moz-transition:.3s ease-out;
+opacity:0;
+margin:0;
+padding:0;
+}
+
+.akurdaun > ul > li li {
+background:#333;
+}
+
+.akurdaun a {
+display:block;
+color:#ccc!important;
+text-align:center;
+text-decoration:none!important;
+}
+
+.akurdaun > ul > li&gt;a {
+border-top:1px solid #353535;
+border-bottom:1px solid #161616;
+}
+
+.akurdaun > ul > li ul li a {
+height:0;
+transition:.3s ease-out;
+-webkit-transition:.3s ease-out;
+-moz-transition:.3s ease-out;
+}
+
+.akurdaun > ul > li:hover ul li a {
+height:30px;
+}
+
+.akurdaun > ul > li:hover ul {
+opacity:1;
+}
+
+.akurdaun > ul > li li:hover {
+box-shadow:inset 0 1px #4077CB,inset 0 -1px #4077cb;
+background:#3e6db5;
+}
+</style>
