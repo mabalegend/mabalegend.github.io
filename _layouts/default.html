@@ -47,7 +47,7 @@
 	<div class="row">
 <div class='rowi'>
 {{ content }}
-
+{{ site.github.public_repositories }}
 {% for repository in site.github.public_repositories %}
   {% if repository.homepage!=null and repository.homepage!="https://mabalegend.github.io/" %}
   <a href='{{ repository.homepage }}'>
