@@ -53,10 +53,11 @@
   <a href='{{ repository.homepage }}'>
     {{ repository.name }}
   </a>
-<div style='background: #000;color:#fff;margin:30px;'>
+
+  {% endif %}
+	<div style='background: #000;color:#fff;margin:30px;'>
 	{{ repository }}
 	</div>
-  {% endif %}
 {% endfor %}
 
 		</div>
